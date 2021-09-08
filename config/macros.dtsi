@@ -2,8 +2,5 @@ macro_KVM: macro_KVM {
   compatible = "zmk,behavior-macro";
   label = "macro_KVM";
   #binding-cells = <0>;
-  bindings = <&kp MINUS>, <&kp MINUS>, <&kp N0>!efsefe
-  
-  ;
-  &kp LALT &kp LCTRL
+  bindings = <&kp LALT>, <&kp LCTRL>, <&kp N0>;
 };
