@@ -11,6 +11,9 @@
 
 / {
     
+    behaviors {
+        #include "macros.dtsi"
+    };
     
     chosen {
         zmk,underglow = &led_strip;
