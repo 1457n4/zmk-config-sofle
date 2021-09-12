@@ -58,7 +58,7 @@
                  &trans        &trans        &trans        &kp F22       &trans        &trans                                        &trans        &trans        &trans        &trans        &trans        &kp F12
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 
-                &ext_power EP_TOG &trans     &trans        &kp F23       &trans        &kp CLCK                                      &trans        &trans        &trans        &trans        &trans        &trans
+                 &kp K_SLEEP   &trans        &trans        &kp F23       &trans        &kp CLCK                                      &trans        &trans        &trans        &trans        &trans        &trans
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                                                                                                                                                                                                         
                  &trans        &kp EQUAL     &kp MINUS     &kp PLUS      &kp LBRC      &kp RBRC      &kp C_PP          &trans        &kp LBKT      &kp RBKT      &kp APOS      &kp COLON     &kp BSLH      &trans
