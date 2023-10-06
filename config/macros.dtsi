@@ -1,0 +1,6 @@
+macro_KVM: macro_KVM {
+  compatible = "zmk,behavior-macro";
+  label = "macro_KVM";
+  #binding-cells = <0>;
+  bindings = <&kp LALT>, <&kp LCTRL>, <&kp N0>;
+};
