@@ -16,21 +16,21 @@
 / {
     
     behaviors {
-        rgb_BR: rgb_encoder {
+        rgb_BR: rgb_encoder_1 {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_ENC_BR";
+            label = "RGB_BR";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
         };
-        rgb_HU: rgb_encoder {
+        rgb_HU: rgb_encoder_2 {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_ENC_HU";
+            label = "RGB_HU";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
         };
-        rgb_SA: rgb_encoder {
+        rgb_SA: rgb_encoder_3 {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_ENC_SA";
+            label = "RGB_SA";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>;
         };
