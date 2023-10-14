@@ -18,19 +18,19 @@
     behaviors {
         rgb_BR: rgb_encoder {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_ENCODER_BR";
+            label = "RGB_ENC_BR";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
         };
         rgb_HU: rgb_encoder {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_ENCODER_HU";
+            label = "RGB_ENC_HU";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
         };
         rgb_SA: rgb_encoder {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_ENCODER_SA";
+            label = "RGB_ENC_SA";
             #sensor-binding-cells = <0>;
             bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>;
         };
