@@ -15,6 +15,27 @@
 
 / {
     
+     macros {
+          to_game: layer_game {
+               label = "TO_GAME";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                    = <&to 3>
+                    , <&rgb_ug RGB_COLOR_HSB(0,10,50)>
+                    ;
+          };
+          to_base: layer_base {
+               label = "TO_BASE";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                    = <&to 0>
+                    , <&rgb_ug RGB_COLOR_HSB(300,10,10)>
+                    ;
+          };
+    };
+
     behaviors {
         rgb_BR: rgb_encoder_1 {
             compatible = "zmk,behavior-sensor-rotate";
@@ -69,7 +90,7 @@
         bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                               ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 
-                 &tog 3        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
+                 &to_game        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                                                                                                                                                                                                                             
                  &trans        &trans        &kp F18       &kp F22       &kp F20       &none                                         &kp STAR      &kp N7        &kp N8        &kp N9        &kp MINUS     &trans        
@@ -130,7 +151,7 @@
                  &kp LSHFT     &kp N3        &kp Z         &kp X         &kp C         &kp M         &tog 3            &none         &none         &none         &none         &none         &none         &none
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                                                                                                                                                                                                             
-                                             &none         &kp LALT      &kp LCTRL     &kp SPACE     &kp V             &none         &none         &none         &none         &tog 3
+                                             &none         &kp LALT      &kp LCTRL     &kp SPACE     &kp V             &none         &none         &none         &none         &to_base
             //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
         >;
 
