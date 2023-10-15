@@ -21,8 +21,8 @@
                compatible = "zmk,behavior-macro";
                #binding-cells = <0>;
                bindings
-                    = <&to 3>
-                    , <&rgb_ug RGB_COLOR_HSB(0,10,50)>
+                    = <&macro_press &to 3>
+                    , <&macro_tap &rgb_ug RGB_COLOR_HSB(0,10,50)>
                     ;
           };
           to_base: layer_base {
@@ -30,8 +30,8 @@
                compatible = "zmk,behavior-macro";
                #binding-cells = <0>;
                bindings
-                    = <&to 0>
-                    , <&rgb_ug RGB_COLOR_HSB(300,10,10)>
+                    = <&macro_press &to 0>
+                    , <&macro_tap &rgb_ug RGB_COLOR_HSB(300,10,10)>
                     ;
           };
     };
