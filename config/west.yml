@@ -9,6 +9,7 @@ manifest:
       remote: petejohanson
       revision: zephyr/3.3-update
       revision: power/domains-and-device-runtime
+      revision: core/peripheral-behavior-invocation
       import: app/west.yml
   self:
     path: config
