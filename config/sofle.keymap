@@ -22,7 +22,7 @@
                #binding-cells = <0>;
                bindings
                     = <&macro_press &to 3>
-                    , <&macro_tap &rgb_ug RGB_COLOR_HSB(0,10,50)>
+                    , <&macro_tap &rgb_ug RGB_ON>
                     ;
           }; 
           to_base: layer_base {
@@ -31,7 +31,7 @@
                #binding-cells = <0>;
                bindings
                     = <&macro_press &to 0>
-                    , <&macro_tap &rgb_ug RGB_COLOR_HSB(300,10,10)>
+                    , <&macro_tap &rgb_ug RGB_OFF>
                     ;
           };
     };
