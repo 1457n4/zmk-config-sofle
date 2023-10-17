@@ -14,7 +14,41 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    
+
+     combos {
+          compatible = "zmk,combos";
+          combo_LCTRL {
+               timeout-ms = <50>;
+               key-positions = <29 28>; // F + D = ctrl
+               bindings = <&kp LCTRL>;
+          };
+          combo_LALT {
+               timeout-ms = <50>;
+               key-positions = <29 27>; // F + S = alt
+               bindings = <&kp LALT>;
+          };
+          combo_LGUI {
+               timeout-ms = <50>;
+               key-positions = <29 26>; // F + A = GUI
+               bindings = <&kp LGUI>;
+          };
+          combo_RCTRL {
+               timeout-ms = <50>;
+               key-positions = <32 33>; // J + K = ctrl
+               bindings = <&kp RCTRL>;
+          };
+          combo_RALT {
+               timeout-ms = <50>;
+               key-positions = <32 34>; // J + L = alt
+               bindings = <&kp RALT>;
+          };
+          combo_RGUI {
+               timeout-ms = <50>;
+               key-positions = <32 35>; // J + : = GUI
+               bindings = <&kp RGUI>;
+          };
+     };
+
      macros {
           to_game: layer_game {
                label = "TO_GAME";
