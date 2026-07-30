@@ -17,26 +17,20 @@
 
 
 
-     macros {
-          to_game: layer_game {
-               label = "TO_GAME";
-               compatible = "zmk,behavior-macro";
-               #binding-cells = <0>;
-               bindings
-                    = <&macro_press &to 3>
-                    , <&macro_tap &rgb_ug RGB_ON>
-                    ;
-          }; 
-          to_base: layer_base {
-               label = "TO_BASE";
-               compatible = "zmk,behavior-macro";
-               #binding-cells = <0>;
-               bindings
-                    = <&macro_press &to 0>
-                    , <&macro_tap &rgb_ug RGB_OFF>
-                    ;
-               };
-          };
+    macros {
+        to_game: layer_game {
+            label = "TO_GAME";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 3 &rgb_ug RGB_ON>;
+        }; 
+        to_base: layer_base {
+            label = "TO_BASE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &rgb_ug RGB_OFF>;
+        };
+    };
 
     behaviors {
         rgb_BR: rgb_encoder_1 {
@@ -157,7 +151,7 @@
             //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
         >;
 
-            sensor-bindings = <&inc_dec_kp F13 F14 &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp F13 F14>;
         };
     };
 };
