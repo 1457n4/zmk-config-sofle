@@ -1,13 +1,14 @@
-#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include "sofle.dtsi"
 
 / {
-    kscan {
-        compatible = "zephyr,kscan-mock";
-        rows = <6>;
-        columns = <7>;
-        event-period = <100>;
-    };
     chosen {
-        zmk,kscan = &kscan;
+        zmk,kscan = &mock_kscan;
+    };
+
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
     };
 };
