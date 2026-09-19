@@ -1,0 +1,13 @@
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+/ {
+    kscan {
+        compatible = "zephyr,kscan-mock";
+        rows = <6>;
+        columns = <7>;
+        event-period = <100>;
+    };
+    chosen {
+        zmk,kscan = &kscan;
+    };
+};
