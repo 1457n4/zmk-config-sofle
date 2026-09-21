@@ -1,4 +1,8 @@
-#include "sofle.dtsi"
+#include <layouts/josefadamcik/sofle.dtsi>
+
+&josefadamcik_sofle_layout {
+    transform = <&default_transform>;
+};
 
 / {
     chosen {
